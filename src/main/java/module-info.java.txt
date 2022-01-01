@@ -1,0 +1,9 @@
+module changelog.java.version.java8 {
+  exports java8;
+}
+
+module changelog.java.version.java9 {
+  requires changelog.java.version.java8;
+
+  exports java9;
+}
