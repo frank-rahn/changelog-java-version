@@ -1,0 +1,25 @@
+= Changelog Java Versions
+Frank Rahn <frankqfrank-rahn.de>
+:toc:
+:toclevels: 3
+:toc-title: Inhaltsverzeichnis
+:toc-placement!:
+:sectanchors:
+
+Eine Auflistung der Änderungen in Java aus Sicht eines Entwicklers.
+
+image:https://img.shields.io/badge/license-Apache_License_2-blue.svg[title="Apache License 2", alt="Apache License 2", link="https://www.apache.org/licenses/LICENSE-2.0"]
+
+toc::[]
+
+Die Programmiersprache Java entwickelt sich von Version zu Version weiter. In dieser Präsentation werden die wichtigsten Änderungen aus Sicht eines Entwicklers dargestellt.
+
+Es werden Programmierkenntnisse ab der Java Version 7 vorausgesetzt.
+
+In diesem Repository liegt der Sourcecode, der in dieser https://slides.frank-rahn.de/changelog-java-versions/??utm_source=github&utm_medium=readme&utm_campaign=changelog-java-versions&utm_content=top[Präsentation] verwendetet wird.
+
+== Zugehörige Präsentation
+* https://slides.frank-rahn.de/changelog-java-versions/??utm_source=github&utm_medium=readme&utm_campaign=changelog-java-versions&utm_content=top[Changelog Java Versions] bei https://www.frank-rahn.de/?utm_source=github&utm_medium=readme&utm_campaign=changelog-java-versions&utm_content=top[Frank W. Rahn]
+
+== Homepage des Autors
+https://www.frank-rahn.de/?utm_source=github&utm_medium=readme&utm_campaign=changelog-java-versions&utm_content=top[Frank W. Rahn]
