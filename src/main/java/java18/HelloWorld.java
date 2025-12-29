@@ -2,7 +2,6 @@ package java18;
 
 /**
  * ...
- *
  * {@snippet :
  * System.out.println("Hello World!");
  * }

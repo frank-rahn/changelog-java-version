@@ -3,8 +3,6 @@ package java22;
 import java.lang.foreign.Arena;
 import java.lang.foreign.FunctionDescriptor;
 import java.lang.foreign.Linker;
-import java.lang.foreign.Linker.Option;
-import java.lang.foreign.SymbolLookup;
 import java.lang.foreign.ValueLayout;
 
 public class ForeignFunctionMemoryAPI {
