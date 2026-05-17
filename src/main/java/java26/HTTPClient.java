@@ -1,4 +1,4 @@
-package java11;
+package java26;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -8,12 +8,12 @@ import java.util.concurrent.CompletableFuture;
 
 public class HTTPClient {
   public CompletableFuture<String> process(String uri) {
-    HttpClient client = HttpClient.newHttpClient();
+    var client = HttpClient.newHttpClient();
 
-    HttpRequest request =
+    var request =
         HttpRequest.newBuilder()
             .GET()
-            .version(HttpClient.Version.HTTP_2)
+            .version(HttpClient.Version.HTTP_3)
             .uri(URI.create(uri))
             .build();
 

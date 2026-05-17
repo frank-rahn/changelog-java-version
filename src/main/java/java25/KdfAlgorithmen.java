@@ -6,7 +6,7 @@ import javax.crypto.spec.HKDFParameterSpec;
 
 public class KdfAlgorithmen {
   /**
-   * Eine Parameter-Spezifikation von Typ ExtractExpand erzeugen:
+   * Eine Parameter-Spezifikation vom Typ ExtractExpand erzeugen:
    * <ol>
    *   <li>Extract: Konzentriert die Entropie aus der Eingabe, um einen pseudorandom key (PRK) zu erzeugen</li>
    *   <li>Erweitert den PRK zu einem oder mehreren Schlüsseln, wobei der info-Parameter zur Kontextbindung dient</li>
@@ -17,9 +17,9 @@ public class KdfAlgorithmen {
     var initialKeyMaterial = "seed-key-material".getBytes();
     // Verbessert Sicherheit, besonders wenn die Eingabe schwach ist
     var salt = "salt".getBytes();
-    // Verhindert Wiederverwendung des gleichen Schlüssels in verschiedenen Kontexten
+    // Verhindert die Wiederverwendung des gleichen Schlüssels in verschiedenen Kontexten
     var info = "encryption".getBytes(); // or authentication
-    // Eine Parameter-Spezifikation von Typ ExtractExpand erzeugen
+    // Eine Parameter-Spezifikation vom Typ ExtractExpand erzeugen
     var params =
         HKDFParameterSpec.ofExtract()
             .addIKM(initialKeyMaterial)
@@ -33,13 +33,5 @@ public class KdfAlgorithmen {
     var aesKey = hkdf.deriveKey("AES", params);
     IO.println("Key algorithm: " + aesKey.getAlgorithm());
     IO.println("Key length:    " + aesKey.getEncoded().length);
-  }
-
-  static void main() {
-    try {
-      process();
-    } catch (GeneralSecurityException e) {
-      e.printStackTrace();
-    }
   }
 }
